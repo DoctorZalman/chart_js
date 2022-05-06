@@ -6,7 +6,7 @@ import { StatusFilter } from './interfaces';
 import { IFilterProps } from '../../interfaces';
 
 const ToggleButtons: FC<IFilterProps> = ({ onChange, filter }): ReactElement => {
-  const { BAR_CHART, LINE_CHART, PIE_CHART } = StatusFilter;
+  const { DOUGHNUT_CHART, POLAR_AREA_CHART, PIE_CHART } = StatusFilter;
   const classes = useStyles();
 
   const handleChangeFilter = (event: MouseEvent<HTMLElement>, newAlignment: string): void => {
@@ -20,8 +20,8 @@ const ToggleButtons: FC<IFilterProps> = ({ onChange, filter }): ReactElement => 
       value={filter}
       exclusive
       onChange={handleChangeFilter}>
-      <ToggleButton value={BAR_CHART}>Bar Chart</ToggleButton>
-      <ToggleButton value={LINE_CHART}>Line Chart</ToggleButton>
+      <ToggleButton value={DOUGHNUT_CHART}>Doughnut Chart</ToggleButton>
+      <ToggleButton value={POLAR_AREA_CHART}>Polar Area Chart</ToggleButton>
       <ToggleButton value={PIE_CHART}>Pie Chart</ToggleButton>
     </ToggleButtonGroup>
   );

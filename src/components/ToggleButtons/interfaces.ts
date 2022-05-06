@@ -1,5 +1,5 @@
 export enum StatusFilter {
-  BAR_CHART = 'bar_chart',
-  LINE_CHART = 'line_chart',
+  DOUGHNUT_CHART = 'doughnut_chart',
+  POLAR_AREA_CHART = 'polar_area_chart',
   PIE_CHART = 'pie_chart',
 }

@@ -1,15 +1,12 @@
-import { IChartData } from '../components/Container/interface';
+import { IChartData } from '../components/InputContainer/interface';
 
 interface IDataSetArray {
   data: string[];
 }
-interface IDataSetObject {
-  data: [number];
-}
 
 export interface IData {
   labels: string[];
-  datasets: IDataSetArray[] | IDataSetObject[];
+  datasets: IDataSetArray[];
 }
 
 export interface IInputProps {
