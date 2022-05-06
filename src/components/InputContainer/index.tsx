@@ -3,7 +3,7 @@ import { Box, FormControl, FormHelperText, InputLabel, OutlinedInput } from '@mu
 import { IChartData } from './interface';
 import { IInputProps } from '../../interfaces';
 
-const Container: FC<IInputProps> = ({ addData }): ReactElement => {
+const InputContainer: FC<IInputProps> = ({ addData }): ReactElement => {
   const [data, setData] = useState<IChartData>({ valueLabels: '', valueData: '' });
 
   // add new data item to state and localStorage
@@ -73,4 +73,4 @@ const Container: FC<IInputProps> = ({ addData }): ReactElement => {
   );
 };
 
-export default Container;
+export default InputContainer;
