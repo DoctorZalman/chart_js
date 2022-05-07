@@ -1,22 +1,40 @@
 import { createTheme } from '@mui/material';
 
-const theme = createTheme({
+export const darkTheme = createTheme({
   palette: {
-    mode: 'light',
-    background: {
-      default: '#e7f6ff',
-    },
+    mode: 'dark',
     primary: {
-      main: '#19283B',
-      dark: '#292e35',
-      light: '#7FB7FF',
-      contrastText: '#ffffff',
+      main: '#658C6F',
+      light: '#78C679',
+      dark: '#2F575D',
     },
-    secondary: {
-      main: '#97C0FC',
-      contrastText: '#ffffff',
+    background: {
+      default: '#24454a',
     },
+    text: {
+      primary: '#fff',
+      secondary: 'rgba(255,255,255,0.7)',
+      disabled: 'rgba(255,255,255,0.5)',
+    },
+    divider: 'rgba(225,225,225, 0.25)',
   },
 });
-
-export default theme;
+export const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#24454a',
+      light: '#C4CDC1',
+      dark: '#99AEAD',
+    },
+    background: {
+      default: '#6E9197',
+    },
+    text: {
+      primary: 'rgba(0,0,0,0.875)',
+      secondary: 'rgba(0,0,0,0.6)',
+      disabled: 'rgba(0,0,0,0.38)',
+    },
+    divider: 'rgba(0,0,0,0.25)',
+  },
+});

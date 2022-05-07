@@ -6,7 +6,11 @@ export const useStyles = makeStyles((theme) => {
 
   return {
     filterButton: {
-      paddingTop: 40,
+      paddingTop: 20,
+      paddingBottom: 20,
+    },
+    button: {
+      fontSize: '0.7rem !important',
     },
   };
 });
