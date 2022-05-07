@@ -1,6 +1,7 @@
 {
   "name": "charts_js",
   "version": "0.1.0",
+  "homepage": "https://doctorzalman.github.io/chart_js/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -20,6 +21,7 @@
     "chart.js": "^3.7.1",
     "eslint": "^8.14.0",
     "faker": "5.5.3",
+    "gh-pages": "^3.2.3",
     "react": "^18.1.0",
     "react-chartjs-2": "^4.1.0",
     "react-dom": "^18.1.0",
@@ -37,7 +39,9 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prettier:cli": "yarn prettier \"**/*.ts\" \"**/*.tsx\"",
     "prettier:check": "yarn run prettier:cli -l",
-    "prettier:fix": "yarn run prettier:cli --write"
+    "prettier:fix": "yarn run prettier:cli --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
