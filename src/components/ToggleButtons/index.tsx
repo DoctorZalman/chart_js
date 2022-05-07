@@ -20,9 +20,15 @@ const ToggleButtons: FC<IFilterProps> = ({ onChange, filter }): ReactElement => 
       value={filter}
       exclusive
       onChange={handleChangeFilter}>
-      <ToggleButton value={DOUGHNUT_CHART}>Doughnut Chart</ToggleButton>
-      <ToggleButton value={POLAR_AREA_CHART}>Polar Area Chart</ToggleButton>
-      <ToggleButton value={PIE_CHART}>Pie Chart</ToggleButton>
+      <ToggleButton className={classes.button} value={DOUGHNUT_CHART}>
+        Doughnut Chart
+      </ToggleButton>
+      <ToggleButton className={classes.button} value={POLAR_AREA_CHART}>
+        Polar Area Chart
+      </ToggleButton>
+      <ToggleButton className={classes.button} value={PIE_CHART}>
+        Pie Chart
+      </ToggleButton>
     </ToggleButtonGroup>
   );
 };

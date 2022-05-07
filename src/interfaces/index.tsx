@@ -17,3 +17,8 @@ export interface IFilterProps {
   onChange: (value: string) => void;
   filter: string;
 }
+//
+// export interface ISwitchChange {
+//   onChange: () => void;
+//   darkMode: string;
+// }

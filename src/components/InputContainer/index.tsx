@@ -44,6 +44,7 @@ const InputContainer: FC<IInputProps> = ({ addData }): ReactElement => {
           <InputLabel htmlFor="component-outlined">Labels</InputLabel>
           <OutlinedInput
             value={data.valueLabels}
+            color="primary"
             id="component-outlined"
             label="labels"
             name="valueLabels"

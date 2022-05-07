@@ -15,6 +15,8 @@ import {
   Title,
   Tooltip,
 } from 'chart.js';
+import { Box } from '@mui/material';
+import { useStyles } from './styles';
 
 ChartJS.register(
   ArcElement,
@@ -32,6 +34,8 @@ ChartJS.register(
 const ChartsContainer: FC<IChartProps> = ({ data }): ReactElement => {
   const [filter, setFilter] = useState<string>(StatusFilter.DOUGHNUT_CHART);
 
+  const classes = useStyles();
+
   const handleChangeFilter = (filterValue: string) => {
     setFilter(filterValue);
   };
@@ -43,10 +47,10 @@ const ChartsContainer: FC<IChartProps> = ({ data }): ReactElement => {
   };
 
   return (
-    <>
+    <Box className={classes.charts_container}>
       <ToggleButtons onChange={handleChangeFilter} filter={filter} />
       {constructorCharts[filter]}
-    </>
+    </Box>
   );
 };
 
